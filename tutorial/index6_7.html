@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet debug page</title>
+
+<!-- Leafletライブラリ読み込み -->
+<script src="./leaflet-1.0.1/leaflet/leaflet.js "></script>
+<link href="./leaflet-1.0.1/leaflet/leaflet.css " rel="stylesheet"/>
+<script src="./data/tokyo4326.geojson"></script>
+<script src="./data/tokyoPoints.geojson"></script>
+<script src="./data/tokyo4326_zenhan.geojson"></script>
+<script src="./data/tokyo4326_kouhan.geojson"></script>
+
+<!-- CSS読み込み -->
+<link href="./css/stylesheet_snake.css" rel="stylesheet" />
+
+<!-- PLUGIN読み込み -->
+<script src="./Leaflet.Polyline.SnakeAnim-master/L.Polyline.SnakeAnim.js "></script>
+
+</head>
+<body>
+
+<div id="map"></div>
+<div id="title"><p>東京マラソン新コース</p></div>
+<div id="btn"><button class="button1" onclick='snake()'>さあ！走ろう！</button></div>
+
+<!-- JS読み込み -->
+<script src="./js/script7.js"></script>
+
+</body>
+
+</html>

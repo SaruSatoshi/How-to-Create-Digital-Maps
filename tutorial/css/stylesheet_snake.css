@@ -1,0 +1,64 @@
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#map {
+    z-index: 0;
+    height: 100%;
+}
+
+#title{
+    position:absolute;
+    top: 30px;
+    left: 60px;
+    width:400px;
+    height: 60px;
+    background-color: white;
+    z-index: 1;
+    text-align=center;
+}
+
+#title p{
+    margin: 0;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#btn{
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    z-index: 1;
+}
+
+button.button1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #360;
+    color: #fff;
+    border-style: none;
+}
+
+button.button2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #009;
+    color: #fff;
+    border-style: none;
+}
+
+button.button3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #c00;
+    color: #fff;
+    border-style: none;
+}
