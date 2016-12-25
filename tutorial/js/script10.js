@@ -111,13 +111,9 @@ function onClick(evt){
     var index = parseInt(this.getAttribute("data-id"));
 //⑫クリック時のイベントを記述（パン先＆ズーム先＆ポップアップ）
     var point = marathonPoints.features[index].geometry.coordinates;
-    map.panTo([ point[1], point[0] ]);
-    map.setZoom(16);
+    //map.panTo([ point[1], point[0] ]);
+    //map.setZoom(16);
+    map.setView([ point[1], point[0] ], 16);
     pointMarkers[index].openPopup();
 	};
 };
-
-//window.onload問題
-//onClick(script)とonclick(html)の違い？　メソッドか？
-//var index = parseInt(this.getAttribute("data-id"));→⑫は実行されるのか？
-//console.log(evt);？？
